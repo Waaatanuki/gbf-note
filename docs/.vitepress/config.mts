@@ -1,4 +1,7 @@
 import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -12,6 +15,16 @@ export default defineConfig({
     plugins: [
       Unocss({
         inspector: false,
+      }),
+      AutoImport({
+        imports: ['vue', '@vueuse/core'],
+        dts: 'types/auto-imports.d.ts',
+        resolvers: [ElementPlusResolver()],
+        vueTemplate: true,
+      }),
+      Components({
+        resolvers: [ElementPlusResolver()],
+        dts: 'types/components.d.ts',
       }),
     ],
   },

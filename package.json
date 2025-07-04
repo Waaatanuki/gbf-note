@@ -7,6 +7,10 @@
     "docs:preview": "vitepress preview docs",
     "up": "taze major -I"
   },
+  "dependencies": {
+    "@vueuse/core": "^13.5.0",
+    "element-plus": "^2.10.2"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^4.16.2",
     "@unocss/eslint-config": "^66.3.2",
@@ -14,6 +18,8 @@
     "eslint-plugin-format": "^1.0.1",
     "typescript": "^5.8.3",
     "unocss": "^66.3.2",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.8.0",
     "vitepress": "^1.6.3"
   }
 }

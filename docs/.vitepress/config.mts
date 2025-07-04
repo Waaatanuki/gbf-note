@@ -5,6 +5,9 @@ export default defineConfig({
   title: 'Granblue Note',
   description: '碧蓝笔记',
   base: '/gbf-note/',
+  head: [
+    ['link', { rel: 'icon', href: '/gbf-note/favicon.ico' }],
+  ],
   vite: {
     plugins: [
       Unocss(),
@@ -15,7 +18,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
     ],
-
     sidebar: [
       {
         text: 'Examples',

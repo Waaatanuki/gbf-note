@@ -21,11 +21,13 @@ export default defineConfig({
         imports: ['vue', '@vueuse/core'],
         dts: 'types/auto-imports.d.ts',
         resolvers: [ElementPlusResolver()],
+        dirs: ['composables'],
         vueTemplate: true,
       }),
       Components({
         resolvers: [ElementPlusResolver()],
         dts: 'types/components.d.ts',
+        dirs: ['components'],
       }),
     ],
     ssr: { noExternal: ['element-plus'] },

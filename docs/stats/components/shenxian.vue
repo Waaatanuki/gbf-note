@@ -59,14 +59,14 @@ function isFastestAttr(row: any, attr: string) {
   return currentTime === fastestTime
 }
 
-function isMostAttr(row: any, attr: string) {
-  const maxCount = Math.max(...column.map(col => row[col].count))
-  return row[attr].count === maxCount
-}
+// function isMostAttr(row: any, attr: string) {
+//   const maxCount = Math.max(...column.map(col => row[col].count))
+//   return row[attr].count === maxCount
+// }
 </script>
 
 <template>
-  <div class="m-auto w-1100px">
+  <div>
     <el-table :data="tableData" :border="true">
       <el-table-column prop="date" label="日期" width="100" align="center">
         <template #default="{ row, $index }">
@@ -81,21 +81,22 @@ function isMostAttr(row: any, attr: string) {
           v-for="attr in column" :key="attr" :label="attr"
           :label-class-name="`header-${attr}`"
           align="center"
+          width="100"
         >
-          <el-table-column label="最速" align="center">
-            <template #default="{ row }">
-              <div :class="{ 'bg-fastest': isFastestAttr(row, attr) }">
-                {{ row[attr].time }}
-              </div>
-            </template>
-          </el-table-column>
-          <el-table-column label="人数" align="center">
+          <!-- <el-table-column label="最速" align="center"> -->
+          <template #default="{ row }">
+            <div :class="{ 'bg-fastest': isFastestAttr(row, attr) }">
+              {{ row[attr].time }}
+            </div>
+          </template>
+          <!-- </el-table-column> -->
+          <!-- <el-table-column label="人数" align="center">
             <template #default="{ row }">
               <div :class="{ 'bg-most': isMostAttr(row, attr) }">
                 {{ row[attr].count }}
               </div>
             </template>
-          </el-table-column>
+          </el-table-column> -->
         </el-table-column>
       </el-table-column>
     </el-table>

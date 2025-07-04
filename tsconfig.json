@@ -20,5 +20,8 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
+  "vueCompilerOptions": {
+    "vitePressExtensions": [".md"]
+  },
   "exclude": ["dist", "node_modules"]
 }

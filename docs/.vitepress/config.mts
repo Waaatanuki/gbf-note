@@ -8,6 +8,7 @@ export default defineConfig({
   title: 'Granblue Note',
   description: '碧蓝笔记',
   base: '/gbf-note/',
+  lang: 'zh-CN',
   head: [
     ['link', { rel: 'icon', href: '/gbf-note/favicon.ico' }],
   ],
@@ -46,7 +47,7 @@ export default defineConfig({
       {
         text: '统计数据',
         items: [
-          { text: '四象降临', link: '/stats/sixiang' },
+          { text: '神仙杯', link: '/stats/shenxian' },
           { text: '古战场', link: '/stats/guildwar' },
         ],
       },

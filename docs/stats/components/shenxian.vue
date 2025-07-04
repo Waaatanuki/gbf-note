@@ -66,22 +66,22 @@ function isFastestAttr(row: any, attr: string) {
 </script>
 
 <template>
-  <div>
-    <el-table :data="tableData" :border="true">
-      <el-table-column prop="date" label="日期" width="100" align="center">
-        <template #default="{ row, $index }">
-          <div flex flex-col>
-            <div>第{{ ['一', '二', '三', '四', '五'][$index] }}届</div>
-            <div>{{ row.date }}</div>
-          </div>
-        </template>
-      </el-table-column>
+  <div fc>
+    <el-table :data="tableData" :border="true" style="width: 600px;">
       <el-table-column label="神仙杯统计结果" align="center">
+        <el-table-column prop="date" label="日期" align="center">
+          <template #default="{ row, $index }">
+            <div flex flex-col>
+              <div>第{{ ['一', '二', '三', '四', '五'][$index] }}届</div>
+              <div>{{ row.date }}</div>
+            </div>
+          </template>
+        </el-table-column>
         <el-table-column
           v-for="attr in column" :key="attr" :label="attr"
           :label-class-name="`header-${attr}`"
           align="center"
-          width="100"
+          width="80"
         >
           <!-- <el-table-column label="最速" align="center"> -->
           <template #default="{ row }">

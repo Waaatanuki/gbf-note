@@ -28,6 +28,7 @@ export default defineConfig({
         dts: 'types/components.d.ts',
       }),
     ],
+    ssr: { noExternal: ['element-plus'] },
   },
   themeConfig: {
     sidebar: [

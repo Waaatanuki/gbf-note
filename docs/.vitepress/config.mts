@@ -55,6 +55,12 @@ export default defineConfig({
         ],
       },
       {
+        text: '工具',
+        items: [
+          { text: '新增角色', link: '/tool/npc' },
+        ],
+      },
+      {
         text: '开发运维',
         items: [
           {

@@ -30,6 +30,35 @@ export default defineConfig({
           { text: '极法', link: '/build/rushizero' },
         ],
       },
+      {
+        text: '开发运维',
+        items: [
+          {
+            text: '服务器',
+            items: [
+              { text: 'docker', link: '/devops/server/docker' },
+              { text: 'prisma', link: '/devops/server/prisma' },
+              { text: 'mysql', link: '/devops/server/mysql' },
+              { text: 'mongo', link: '/devops/server/mongo' },
+              { text: 'redis', link: '/devops/server/redis' },
+            ],
+          },
+          {
+            text: '客户端',
+            items: [
+              { text: '激活码', link: '/devops/client/code' },
+            ],
+          },
+          {
+            text: '开发',
+            items: [
+              { text: 'WSL', link: '/devops/dev/wsl' },
+              { text: 'Ubuntu', link: '/devops/dev/ubuntu' },
+            ],
+          },
+        ],
+      },
+
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Waaatanuki/gbf-note' },

@@ -23,6 +23,13 @@ export default defineConfig({
           { text: '关于', link: '/about' },
         ],
       },
+      {
+        text: '实战构筑',
+        items: [
+          { text: '天元', link: '/build/tengen' },
+          { text: '极法', link: '/build/rushizero' },
+        ],
+      },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Waaatanuki/gbf-note' },

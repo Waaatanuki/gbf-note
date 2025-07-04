@@ -31,6 +31,13 @@ export default defineConfig({
         ],
       },
       {
+        text: '统计数据',
+        items: [
+          { text: '四象降临', link: '/stats/sixiang' },
+          { text: '古战场', link: '/stats/guildwar' },
+        ],
+      },
+      {
         text: '开发运维',
         items: [
           {

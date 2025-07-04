@@ -37,7 +37,8 @@ export default defineConfig({
       {
         text: '开始',
         items: [
-          { text: '关于', link: '/about' },
+          { text: '关于', link: '/begin/about' },
+          { text: '游戏信息', link: '/begin/learn' },
         ],
       },
       {

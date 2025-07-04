@@ -1,25 +1,22 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   name: "Granblue Note"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: "碧蓝幻想笔记"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 开始
+      link: /about
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: NGA 碧蓝幻想专区
+    link: https://bbs.nga.cn/thread.php?fid=560
+    details: 国内最大的骑空士交流论坛
+  - title: 碧蓝幻想中文wiki
+    link: https://gbf.huijiwiki.com/wiki/
+    details: 全面的碧蓝幻想中文维基百科
+  - title: 碧蓝幻想便利工具网站
+    link: https://gbf.pub
+    details: 实用小工具
 ---
-

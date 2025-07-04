@@ -10,20 +10,17 @@ export default defineConfig({
   ],
   vite: {
     plugins: [
-      Unocss(),
+      Unocss({
+        inspector: false,
+      }),
     ],
   },
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-    ],
     sidebar: [
       {
-        text: 'Examples',
+        text: '开始',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: '关于', link: '/about' },
         ],
       },
     ],

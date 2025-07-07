@@ -68,7 +68,7 @@ function isFastestAttr(row: any, attr: string) {
 <template>
   <div fc>
     <el-table :data="tableData" :border="true" style="width: 600px;">
-      <el-table-column label="神仙杯统计结果" align="center">
+      <el-table-column label="第一季神仙杯统计结果" align="center">
         <el-table-column prop="date" label="日期" align="center">
           <template #default="{ row, $index }">
             <div flex flex-col>

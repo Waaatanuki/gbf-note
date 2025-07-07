@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /about
+      link: /begin/about
 
 features:
   - title: NGA 碧蓝幻想专区

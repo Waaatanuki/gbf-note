@@ -1,40 +1,58 @@
 <script setup lang="ts">
 const tableData = [
   {
-    date: '2021-11',
-    火: { time: '2:49', count: 9 },
-    水: { time: '2:29', count: 13 },
-    土: { time: '2:37', count: 24 },
-    风: { time: '1:44', count: 42 },
-    光: { time: '2:19', count: 15 },
-    暗: { time: '2:21', count: 16 },
+    title: '第一季神仙杯统计结果',
+    data: [
+      {
+        date: '2021-11',
+        火: { time: '2:49', count: 9 },
+        水: { time: '2:29', count: 13 },
+        土: { time: '2:37', count: 24 },
+        风: { time: '1:44', count: 42 },
+        光: { time: '2:19', count: 15 },
+        暗: { time: '2:21', count: 16 },
+      },
+      {
+        date: '2023-04',
+        火: { time: '1:42', count: 6 },
+        水: { time: '1:09', count: 9 },
+        土: { time: '1:09', count: 11 },
+        风: { time: '1:47', count: 23 },
+        光: { time: '0:53', count: 20 },
+        暗: { time: '1:09', count: 39 },
+      },
+      {
+        date: '2024-04',
+        火: { time: '0:58', count: 8 },
+        水: { time: '0:47', count: 10 },
+        土: { time: '0:44', count: 11 },
+        风: { time: '0:52', count: 1 },
+        光: { time: '0:34', count: 11 },
+        暗: { time: '0:49', count: 6 },
+      },
+      {
+        date: '2025-04',
+        火: { time: '0:28', count: 13 },
+        水: { time: '0:27', count: 10 },
+        土: { time: '0:27', count: 16 },
+        风: { time: '0:29', count: 5 },
+        光: { time: '0:25', count: 11 },
+        暗: { time: '0:30', count: 10 },
+      },
+    ],
+
   },
   {
-    date: '2023-04',
-    火: { time: '1:42', count: 6 },
-    水: { time: '1:09', count: 9 },
-    土: { time: '1:09', count: 11 },
-    风: { time: '1:47', count: 23 },
-    光: { time: '0:53', count: 20 },
-    暗: { time: '1:09', count: 39 },
-  },
-  {
-    date: '2024-04',
-    火: { time: '0:58', count: 8 },
-    水: { time: '0:47', count: 10 },
-    土: { time: '0:44', count: 11 },
-    风: { time: '0:52', count: 1 },
-    光: { time: '0:34', count: 11 },
-    暗: { time: '0:49', count: 6 },
-  },
-  {
-    date: '2025-04',
-    火: { time: '0:28', count: 13 },
-    水: { time: '0:27', count: 10 },
-    土: { time: '0:27', count: 16 },
-    风: { time: '0:29', count: 5 },
-    光: { time: '0:25', count: 11 },
-    暗: { time: '0:30', count: 10 },
+    title: '第二季神仙杯统计结果',
+    data: [{
+      date: '2025-07',
+      火: { time: '2:38', lou: 32 },
+      水: { time: '2:07', lou: 40 },
+      土: { time: '2:20', lou: 28 },
+      风: { time: '2:11', lou: 35 },
+      光: { time: '2:24', lou: 14 },
+      暗: { time: '2:46', lou: 39 },
+    }],
   },
 ]
 
@@ -66,9 +84,9 @@ function isFastestAttr(row: any, attr: string) {
 </script>
 
 <template>
-  <div fc>
-    <el-table :data="tableData" :border="true" style="width: 600px;">
-      <el-table-column label="第一季神仙杯统计结果" align="center">
+  <div fc flex-col gap-10>
+    <el-table v-for="series, index in tableData" :key="index" :data="series.data" :border="true" style="width: 600px;">
+      <el-table-column :label="series.title" align="center">
         <el-table-column prop="date" label="日期" align="center">
           <template #default="{ row, $index }">
             <div flex flex-col>

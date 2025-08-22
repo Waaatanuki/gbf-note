@@ -25,6 +25,6 @@
     "unocss": "^66.3.2",
     "unplugin-auto-import": "^19.3.0",
     "unplugin-vue-components": "^28.8.0",
-    "vitepress": "2.0.0-alpha.7"
+    "vitepress": "2.0.0-alpha.12"
   }
 }

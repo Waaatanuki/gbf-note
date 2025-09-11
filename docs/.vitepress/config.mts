@@ -54,6 +54,7 @@ export default defineConfig({
         items: [
           { text: '神仙杯', link: '/stats/shenxian' },
           { text: '古战场', link: '/stats/guildwar' },
+          { text: '旅行', link: '/stats/trip' },
         ],
       },
       {

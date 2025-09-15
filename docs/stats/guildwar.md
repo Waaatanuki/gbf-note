@@ -4,6 +4,22 @@ import EventCard from '../components/EventCard.vue'
 
 const eventList = ref([
   {
+    value: 'teamraid079',
+    title: '第79回古战场(暗有利)',
+    date: ['2025-09-07', '2025-09-14'],
+    user: 5409,
+    cow: { total: 451829, gold: 27541, meat: 9645675, summon: 16895, weapon: 812 },
+    swarm: { total: 154624, meat: 36351192, summon: 170212, weapon: 4242 },
+    quest: [
+      { questId: '933971', questName: '90HELL', questImage: 'teamraid079_hell90', celestialWeapon: 526, revenantWeapon: 508, bigMeat: 237845, total: 190826 },
+      { questId: '933981', questName: '95HELL', questImage: 'teamraid079_hell95', celestialWeapon: 99, revenantWeapon: 107, bigMeat: 70070, total: 44908 },
+      { questId: '933991', questName: '100HELL', questImage: 'teamraid079_hell100', celestialWeapon: 563, revenantWeapon: 582, bigMeat: 424323, total: 175671 },
+      { questId: '934001', questName: '150HELL', questImage: 'teamraid079_hell150', celestialWeapon: 1748, revenantWeapon: 1614, bigMeat: 1597039, total: 524651 },
+      { questId: '934011', questName: '200HELL', questImage: 'teamraid079_hell200', celestialWeapon: 430, revenantWeapon: 448, bigMeat: 570773, total: 139309 },
+      { questId: '934021', questName: '250HELL', questImage: 'teamraid079_hell250', celestialWeapon: 542, revenantWeapon: 525, bigMeat: 0, total: 159623 },
+    ],
+  },
+  {
     value: 'teamraid078',
     title: '第78回古战场(火有利)',
     date: ['2025-06-21', '2025-06-28'],
@@ -11,14 +27,7 @@ const eventList = ref([
     cow: { total: 462646, gold: 28151, meat: 9602102, summon: 16213, weapon: 594 },
     swarm: { total: 152159, meat: 35249739, summon: 158537, weapon: 4228 },
     quest: [
-      {
-        questId: '931171',
-        questName: 'hell90',
-        celestialWeapon: 1396,
-        revenantWeapon: 1293,
-        bigMeat: 750075,
-        total: 751519,
-      },
+      { questId: '931171', questName: 'hell90', celestialWeapon: 1396, revenantWeapon: 1293, bigMeat: 750075, total: 751519 },
       { questId: '931181', questName: 'hell95', celestialWeapon: 157, revenantWeapon: 165, bigMeat: 117078, total: 81973 },
       { questId: '931191', questName: 'hell100', celestialWeapon: 1171, revenantWeapon: 1178, bigMeat: 881358, total: 367575 },
       { questId: '931201', questName: 'hell150', celestialWeapon: 1413, revenantWeapon: 1397, bigMeat: 1331033, total: 440771 },
@@ -29,93 +38,26 @@ const eventList = ref([
   {
     value: 'teamraid077',
     title: '第77回古战场(光有利)',
-    date: [
-      '2025-04-07',
-      '2025-04-14',
-    ],
+    date: ['2025-04-07', '2025-04-14'],
     user: 5753,
-    cow: {
-      total: 1324032,
-      gold: 80656,
-      meat: 27750688,
-      summon: 46378,
-      weapon: 1618,
-    },
+    cow: { total: 1324032, gold: 80656, meat: 27750688, summon: 46378, weapon: 1618 },
     quest: [
-      {
-        questId: '929661',
-        questName: 'hell90',
-        celestialWeapon: 3000,
-        revenantWeapon: 2889,
-        bigMeat: 1488487,
-        total: 1327888,
-      },
-      {
-        questId: '929671',
-        questName: 'hell95',
-        celestialWeapon: 293,
-        revenantWeapon: 288,
-        bigMeat: 186127,
-        total: 118343,
-      },
-      {
-        questId: '929681',
-        questName: 'hell100',
-        celestialWeapon: 1132,
-        revenantWeapon: 1142,
-        bigMeat: 946266,
-        total: 395440,
-      },
-      {
-        questId: '929691',
-        questName: 'hell150',
-        celestialWeapon: 1468,
-        revenantWeapon: 1427,
-        bigMeat: 1491632,
-        total: 495497,
-      },
-      {
-        questId: '929701',
-        questName: 'hell200',
-        celestialWeapon: 491,
-        revenantWeapon: 513,
-        bigMeat: 753570,
-        total: 181453,
-      },
-      {
-        questId: '929711',
-        questName: 'hell250',
-        celestialWeapon: 569,
-        revenantWeapon: 548,
-        bigMeat: 2,
-        total: 192098,
-      },
+      { questId: '929661', questName: 'hell90', celestialWeapon: 3000, revenantWeapon: 2889, bigMeat: 1488487, total: 1327888 },
+      { questId: '929671', questName: 'hell95', celestialWeapon: 293, revenantWeapon: 288, bigMeat: 186127, total: 118343 },
+      { questId: '929681', questName: 'hell100', celestialWeapon: 1132, revenantWeapon: 1142, bigMeat: 946266, total: 395440 },
+      { questId: '929691', questName: 'hell150', celestialWeapon: 1468, revenantWeapon: 1427, bigMeat: 1491632, total: 495497 },
+      { questId: '929701', questName: 'hell200', celestialWeapon: 491, revenantWeapon: 513, bigMeat: 753570, total: 181453 },
+      { questId: '929711', questName: 'hell250', celestialWeapon: 569, revenantWeapon: 548, bigMeat: 2, total: 192098 },
     ],
   },
   {
     value: 'teamraid076',
     title: '第76回古战场(水有利)',
-    date: [
-      '2025-01-22',
-      '2025-01-29',
-    ],
+    date: ['2025-01-22', '2025-01-29'],
     user: 4302,
-    cow: {
-      total: 1279430,
-      gold: 78402,
-      meat: 26543399,
-      summon: 44599,
-      weapon: 1578,
-    },
+    cow: { total: 1279430, gold: 78402, meat: 26543399, summon: 44599, weapon: 1578 },
     quest: [
-      {
-        questId: '926761',
-        questName: 'hell90',
-        celestialWeapon: 2944,
-        revenantWeapon: 2783,
-        bigMeat: 1411422,
-        total: 1218641,
-      },
+      { questId: '926761', questName: 'hell90', celestialWeapon: 2944, revenantWeapon: 2783, bigMeat: 1411422, total: 1218641 },
       {
         questId: '926771',
         questName: 'hell95',
@@ -347,6 +289,12 @@ const eventList = ref([
 </script>
 
 # 古战场掉落统计记录
+
+## 79回古战场(暗有利)
+
+::: raw
+<EventCard :event="eventList.find(e=>e.value==='teamraid079')"/>
+:::
 
 ## 78回古战场(火有利)
 

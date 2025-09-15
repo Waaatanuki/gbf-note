@@ -11,12 +11,12 @@ const eventList = ref([
     cow: { total: 451829, gold: 27541, meat: 9645675, summon: 16895, weapon: 812 },
     swarm: { total: 154624, meat: 36351192, summon: 170212, weapon: 4242 },
     quest: [
-      { questId: '933971', questName: '90HELL', questImage: 'teamraid079_hell90', celestialWeapon: 526, revenantWeapon: 508, bigMeat: 237845, total: 190826 },
-      { questId: '933981', questName: '95HELL', questImage: 'teamraid079_hell95', celestialWeapon: 99, revenantWeapon: 107, bigMeat: 70070, total: 44908 },
-      { questId: '933991', questName: '100HELL', questImage: 'teamraid079_hell100', celestialWeapon: 563, revenantWeapon: 582, bigMeat: 424323, total: 175671 },
-      { questId: '934001', questName: '150HELL', questImage: 'teamraid079_hell150', celestialWeapon: 1748, revenantWeapon: 1614, bigMeat: 1597039, total: 524651 },
-      { questId: '934011', questName: '200HELL', questImage: 'teamraid079_hell200', celestialWeapon: 430, revenantWeapon: 448, bigMeat: 570773, total: 139309 },
-      { questId: '934021', questName: '250HELL', questImage: 'teamraid079_hell250', celestialWeapon: 542, revenantWeapon: 525, bigMeat: 0, total: 159623 },
+      { questId: '933971', questName: 'hell90',  celestialWeapon: 526, revenantWeapon: 508, bigMeat: 237845, total: 190826 },
+      { questId: '933981', questName: 'hell95',  celestialWeapon: 99, revenantWeapon: 107, bigMeat: 70070, total: 44908 },
+      { questId: '933991', questName: 'hell100',  celestialWeapon: 563, revenantWeapon: 582, bigMeat: 424323, total: 175671 },
+      { questId: '934001', questName: 'hell150',  celestialWeapon: 1748, revenantWeapon: 1614, bigMeat: 1597039, total: 524651 },
+      { questId: '934011', questName: 'hell200',  celestialWeapon: 430, revenantWeapon: 448, bigMeat: 570773, total: 139309 },
+      { questId: '934021', questName: 'hell250',  celestialWeapon: 542, revenantWeapon: 525, bigMeat: 0, total: 159623 },
     ],
   },
   {
@@ -290,7 +290,7 @@ const eventList = ref([
 
 # 古战场掉落统计记录
 
-## 79回古战场(暗有利)
+## 79回古战场(暗有利) 部分数据丢失
 
 ::: raw
 <EventCard :event="eventList.find(e=>e.value==='teamraid079')"/>

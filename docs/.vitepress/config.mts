@@ -47,6 +47,7 @@ export default defineConfig({
           { text: '天上征伐', link: '/build/tenjou' },
           { text: '天元', link: '/build/tengen' },
           { text: '极法', link: '/build/rushizero' },
+          { text: '常用', link: '/build/common' },
         ],
       },
       {

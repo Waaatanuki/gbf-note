@@ -44,9 +44,11 @@ export default defineConfig({
       {
         text: '实战构筑',
         items: [
+          { text: '常用', link: '/build/common' },
           { text: '天上征伐', link: '/build/tenjou' },
           { text: '天元', link: '/build/tengen' },
           { text: '极法', link: '/build/rushizero' },
+          { text: '极妈', link: '/build/versusia' },
         ],
       },
       {

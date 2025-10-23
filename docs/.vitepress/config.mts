@@ -48,7 +48,6 @@ export default defineConfig({
           { text: '天上征伐', link: '/build/tenjou' },
           { text: '天元', link: '/build/tengen' },
           { text: '极法', link: '/build/rushizero' },
-          { text: '极妈', link: '/build/versusia' },
         ],
       },
       {
@@ -78,6 +77,7 @@ export default defineConfig({
               { text: 'mysql', link: '/devops/server/mysql' },
               { text: 'mongo', link: '/devops/server/mongo' },
               { text: 'redis', link: '/devops/server/redis' },
+              { text: 'crawler', link: '/devops/server/crawler' },
             ],
           },
           {

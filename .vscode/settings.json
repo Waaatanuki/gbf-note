@@ -39,10 +39,6 @@
     "yaml"
   ],
 
-  "[markdown]": {
-    "editor.fontFamily": "'Sarasa MONO HC'"
-  },
-
   "vue.server.includeLanguages": ["vue", "markdown"]
 
 }

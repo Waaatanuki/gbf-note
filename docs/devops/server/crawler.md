@@ -20,7 +20,7 @@
 ssh -v root@xxx.xxx.xxx.xxx
 
 # 3.拷贝私钥到服务器
-scp -i ~/.ssh/xxx ~/.ssh/xxx root@xxx.xxx.xxx.xxx:~/.ssh/
+scp ~/.ssh/xxx root@xxx:~/.ssh/
 
 # 4.设置私钥权限(可选)
 chmod 600 ~/.ssh/xxx
@@ -36,7 +36,7 @@ ssh -i ~/.ssh/xxx -T git@github.com
 git clone git@github.com:Waaatanuki/gbf-crawler.git
 
 # 2.安装全局依赖
-npm i -g pnpm pm2 @antfu/ni@25.0.0
+npm i -g pnpm pm2 @antfu/ni
 
 # 3.安装Chrome依赖
 sudo apt update
@@ -44,13 +44,13 @@ sudo apt install -y ca-certificates fonts-liberation libasound2t64 libatk-bridge
 
 # 4.安装项目依赖
 cd gbf-crawler
-pnpm i
+ni
 
 # 5.设置pm2日志轮转
 pm2 install pm2-logrotate
 
 # 6.启动项目
-pnpm start
+nr start
 ```
 
 ## 运维

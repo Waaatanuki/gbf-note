@@ -4,6 +4,22 @@ import EventCard from '../components/EventCard.vue'
 
 const eventList = ref([
   {
+    value: 'teamraid082',
+    title: '第82回古战场(水有利)',
+    date: ['2026-04-06', '2026-04-13'],
+    user: 7759,
+    cow: { total: 636272, gold: 39044, meat: 13568333, summon: 23502, weapon: 994 },
+    swarm: { total: 233958, meat: 54930727, summon: 254547, weapon: 6577 },
+    quest: [
+      { questId: '942671', questName: 'hell90', celestialWeapon: 3652, revenantWeapon: 3593, bigMeat: 1660725, total: 1281837 },
+      { questId: '942681', questName: 'hell95', celestialWeapon: 2482, revenantWeapon: 2388, bigMeat: 1649628, total: 1082181 },
+      { questId: '942691', questName: 'hell100', celestialWeapon: 151, revenantWeapon: 137, bigMeat: 107716, total: 46855 },
+      { questId: '942701', questName: 'hell150', celestialWeapon: 2052, revenantWeapon: 2044, bigMeat: 2059787, total: 671220 },
+      { questId: '942711', questName: 'hell200', celestialWeapon: 1160, revenantWeapon: 1125, bigMeat: 1707386, total: 408906 },
+      { questId: '942721', questName: 'hell250', celestialWeapon: 1081, revenantWeapon: 977, bigMeat: 0, total: 350220 },
+    ],
+  },
+  {
     value: 'teamraid081',
     title: '第81回古战场(土有利)',
     date: ['2026-01-21', '2026-01-28'],
@@ -145,6 +161,12 @@ const eventList = ref([
 </script>
 
 # 古战场掉落统计记录
+
+## 82回古战场(水有利)
+
+::: raw
+<EventCard :event="eventList.find(e=>e.value==='teamraid082')"/>
+:::
 
 ## 81回古战场(土有利)
 

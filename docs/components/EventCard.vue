@@ -4,7 +4,7 @@ interface Event {
   title: string
   date: string[]
   user: number
-  cow: {
+  cow?: {
     total: number
     gold: number
     meat: number

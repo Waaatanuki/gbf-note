@@ -2,6 +2,15 @@
 import { ref } from 'vue'
 import EventCard from '../components/EventCard.vue'
 
+function getEventHeading(event) {
+  const title = event.title.replace(/^第/, '')
+  return event.value === 'teamraid079' ? `${title} 部分数据丢失` : title
+}
+
+function getEventAnchor(event) {
+  return event.value
+}
+
 const eventList = ref([
   {
     value: 'teamraid083',
@@ -9,12 +18,12 @@ const eventList = ref([
     date: ['2026-06-21', '2026-06-28'],
     user: 7597,
     quest: [
-      { questId: '943771', questName: 'hell90', celestialWeapon: 3254, revenantWeapon: 3300, bigMeat: 0, total: 1285271 },
-      { questId: '943781', questName: 'hell95', celestialWeapon: 2260, revenantWeapon: 2236, bigMeat: 0, total: 1104818 },
-      { questId: '943791', questName: 'hell100', celestialWeapon: 159, revenantWeapon: 181, bigMeat: 0, total: 53717 },
-      { questId: '943801', questName: 'hell150', celestialWeapon: 2160, revenantWeapon: 2193, bigMeat: 0, total: 723380 },
-      { questId: '943811', questName: 'hell200', celestialWeapon: 1143, revenantWeapon: 1137, bigMeat: 0, total: 386666 },
-      { questId: '943821', questName: 'hell250', celestialWeapon: 1039, revenantWeapon: 1021, bigMeat: 0, total: 326894 },
+      { questId: '943771', questName: 'hell90', celestialWeapon: 3254, revenantWeapon: 3300, bigMeat: 1578942, total: 1285271 },
+      { questId: '943781', questName: 'hell95', celestialWeapon: 2260, revenantWeapon: 2236, bigMeat: 1604680, total: 1104818 },
+      { questId: '943791', questName: 'hell100', celestialWeapon: 159, revenantWeapon: 181, bigMeat: 119603, total: 53717 },
+      { questId: '943801', questName: 'hell150', celestialWeapon: 2160, revenantWeapon: 2193, bigMeat: 2147101, total: 723380 },
+      { questId: '943811', questName: 'hell200', celestialWeapon: 1143, revenantWeapon: 1137, bigMeat: 1608172, total: 386666 },
+      { questId: '943821', questName: 'hell250', celestialWeapon: 1039, revenantWeapon: 1021, bigMeat: 0, total: 326895 },
     ],
   },
   {
@@ -176,68 +185,14 @@ const eventList = ref([
 
 # 古战场掉落统计记录
 
-## 83回古战场(火有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid083')"/>
-:::
-
-## 82回古战场(水有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid082')"/>
-:::
-
-## 81回古战场(土有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid081')"/>
-:::
-
-## 80回古战场(风有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid080')"/>
-:::
-
-## 79回古战场(暗有利) 部分数据丢失
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid079')"/>
-:::
-
-## 78回古战场(火有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid078')"/>
-:::
-
-## 77回古战场(光有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid077')"/>
-:::
-
-## 76回古战场(水有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid076')"/>
-:::
-
-## 75回古战场(风有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid075')"/>
-:::
-
-## 74回古战场(土有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid074')"/>
-:::
-
-## 73回古战场(暗有利)
-
-::: raw
-<EventCard :event="eventList.find(e=>e.value==='teamraid073')"/>
-:::
+<template v-for="event in eventList" :key="event.value">
+  <h2 :id="getEventAnchor(event)" tabindex="-1">
+    <a
+      class="header-anchor"
+      :href="`#${getEventAnchor(event)}`"
+      :aria-label="`Permalink to &quot;${getEventHeading(event)}&quot;`"
+    />
+    <a :href="`#${getEventAnchor(event)}`">{{ getEventHeading(event) }}</a>
+  </h2>
+  <EventCard :event="event" />
+</template>

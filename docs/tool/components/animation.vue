@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const imgUri = 'https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/vyrnsampo/assets/character/exploring'
+const imgUri = 'https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/vyrnsampo/assets/character/exploring'
 const currentImageIndex = ref(1)
 let animationFrameId: number | null = null
 let lastTime = 0
@@ -36,7 +36,7 @@ onUnmounted(() => {
 
 <template>
   <div relative h-500px w-500px fc>
-    <img absolute w-full src="https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/vyrnsampo/assets/header_bg/exploring/1_3.jpg" alt="" srcset="">
+    <img absolute w-full src="https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/vyrnsampo/assets/header_bg/exploring/1_3.jpg" alt="" srcset="">
     <div relative w-300px>
       <img absolute :src="`${imgUri}/captain/captain_01_03_000_0${currentImageIndex}.png`">
       <img absolute :src="`${imgUri}/captain/captain_01_02_000_0${currentImageIndex}.png`">

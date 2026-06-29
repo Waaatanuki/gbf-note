@@ -1,4 +1,4 @@
-const imgUri = 'https://prd-game-a1-granbluefantasy.akamaized.net/assets/img'
+const imgUri = 'https://prd-game-a-granbluefantasy.akamaized.net/assets/img'
 const imgProxyUri = 'https://my-faas.vercel.app/image?url='
 
 export function getLocalImg(prop: string, type = 'common') {
@@ -80,35 +80,35 @@ export function getItemSrc(key: string) {
 
   switch (type) {
     case '1':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/weapon/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/weapon/m/${id}.jpg`
     case '2':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/summon/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/summon/m/${id}.jpg`
     case '4':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/normal/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/normal/m/${id}.jpg`
     case '10':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/article/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/article/m/${id}.jpg`
     case '17':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/evolution/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/evolution/m/${id}.jpg`
     case '26':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/copper/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/copper/m/${id}.jpg`
     case '27':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/silver/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/silver/m/${id}.jpg`
     case '28':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/gold/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/gold/m/${id}.jpg`
     case '63':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/platinum/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/platinum/m/${id}.jpg`
     case '73':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/npcaugment/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/npcaugment/m/${id}.jpg`
     case '82':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/newdefeat/m/${id.at(-2) === '0' ? 'gold' : 'silver'}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/newdefeat/m/${id.at(-2) === '0' ? 'gold' : 'silver'}.jpg`
     case '85':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/diamond/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/event/defeat/diamond/m/${id}.jpg`
     case '88':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/item/bonusstock/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/item/bonusstock/m/${id}.jpg`
     case '91':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/shield/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/shield/m/${id}.jpg`
     case '93':
-      return `https://prd-game-a1-granbluefantasy.akamaized.net/assets/img/sp/assets/familiar/m/${id}.jpg`
+      return `https://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/familiar/m/${id}.jpg`
     default:
       return ''
   }

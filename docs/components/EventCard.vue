@@ -42,7 +42,7 @@ const { event } = defineProps<{ event: Event }>()
     </template>
 
     <div my-10px fc flex-wrap gap-10px>
-      <QuestCard quest-image="/sp/quest/assets/2040070000_ex_plus.png" :total="event.cow.total">
+      <QuestCard v-if="event.cow" quest-image="/sp/quest/assets/2040070000_ex_plus.png" :total="event.cow.total">
         <div w-350px fc gap-10>
           <ItemStatistic img="/sp/assets/item/article/s/10116.jpg" hidden :is-percent="false" :value="event.cow.meat" :rate="event.cow.meat / event.cow.total" />
           <!-- <ItemStatistic img="/sp/assets/summon/qm/teamraid_ex_plus_golden.png" hidden :value="event.cow.gold" :rate="event.cow.gold / event.cow.total" /> -->

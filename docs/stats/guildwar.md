@@ -4,6 +4,20 @@ import EventCard from '../components/EventCard.vue'
 
 const eventList = ref([
   {
+    value: 'teamraid083',
+    title: '第83回古战场(火有利)',
+    date: ['2026-06-21', '2026-06-28'],
+    user: 7597,
+    quest: [
+      { questId: '943771', questName: 'hell90', celestialWeapon: 3254, revenantWeapon: 3300, bigMeat: 0, total: 1285271 },
+      { questId: '943781', questName: 'hell95', celestialWeapon: 2260, revenantWeapon: 2236, bigMeat: 0, total: 1104818 },
+      { questId: '943791', questName: 'hell100', celestialWeapon: 159, revenantWeapon: 181, bigMeat: 0, total: 53717 },
+      { questId: '943801', questName: 'hell150', celestialWeapon: 2160, revenantWeapon: 2193, bigMeat: 0, total: 723380 },
+      { questId: '943811', questName: 'hell200', celestialWeapon: 1143, revenantWeapon: 1137, bigMeat: 0, total: 386666 },
+      { questId: '943821', questName: 'hell250', celestialWeapon: 1039, revenantWeapon: 1021, bigMeat: 0, total: 326894 },
+    ],
+  },
+  {
     value: 'teamraid082',
     title: '第82回古战场(水有利)',
     date: ['2026-04-06', '2026-04-13'],
@@ -161,6 +175,12 @@ const eventList = ref([
 </script>
 
 # 古战场掉落统计记录
+
+## 83回古战场(火有利)
+
+::: raw
+<EventCard :event="eventList.find(e=>e.value==='teamraid083')"/>
+:::
 
 ## 82回古战场(水有利)
 

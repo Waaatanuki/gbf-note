@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const tableData = [
+const tableData: any[] = [
   {
     title: '第一季神仙杯统计结果',
     data: [

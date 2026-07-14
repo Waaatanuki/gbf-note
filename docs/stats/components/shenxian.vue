@@ -1,5 +1,18 @@
 <script setup lang="ts">
-const tableData: any[] = [
+interface TableData {
+  title: string
+  data: {
+    date: string
+    火: { time: string, count?: number, lou?: number }
+    水: { time: string, count?: number, lou?: number }
+    土: { time: string, count?: number, lou?: number }
+    风: { time: string, count?: number, lou?: number }
+    光: { time: string, count?: number, lou?: number }
+    暗: { time: string, count?: number, lou?: number }
+  }[]
+}
+
+const tableData: TableData[] = [
   {
     title: '第一季神仙杯统计结果',
     data: [
@@ -44,15 +57,26 @@ const tableData: any[] = [
   },
   {
     title: '第二季神仙杯统计结果',
-    data: [{
-      date: '2025-07',
-      火: { time: '2:38', lou: 32 },
-      水: { time: '2:07', lou: 40 },
-      土: { time: '2:20', lou: 28 },
-      风: { time: '2:11', lou: 35 },
-      光: { time: '2:24', lou: 14 },
-      暗: { time: '2:46', lou: 39 },
-    }],
+    data: [
+      {
+        date: '2025-07',
+        火: { time: '2:38', lou: 32 },
+        水: { time: '2:07', lou: 40 },
+        土: { time: '2:20', lou: 28 },
+        风: { time: '2:11', lou: 35 },
+        光: { time: '2:24', lou: 14 },
+        暗: { time: '2:46', lou: 39 },
+      },
+      {
+        date: '2026-07',
+        火: { time: '2:13', lou: 22 },
+        水: { time: '1:11', lou: 5 },
+        土: { time: '1:58', lou: 25 },
+        风: { time: '1:12', lou: 7 },
+        光: { time: '1:06', lou: 12 },
+        暗: { time: '1:21', lou: 8 },
+      },
+    ],
   },
 ]
 
